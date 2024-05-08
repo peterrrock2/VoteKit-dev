@@ -54,7 +54,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.intersphinx",
     "sphinx_copybutton",
-    "myst_parser",
+    "recommonmark",
 ]
 
 intersphinx_mapping = {
