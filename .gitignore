@@ -8,3 +8,5 @@ dist/
 .idea
 extra_data/
 .venv
+docs/_build
+.docs_venv
