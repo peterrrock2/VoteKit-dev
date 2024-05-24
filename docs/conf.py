@@ -8,6 +8,7 @@
 
 import os
 import sys
+import subprocess
 
 try:
     import mock
@@ -33,10 +34,14 @@ project = "VoteKit"
 copyright = "2024, Metric Geometry and Gerrymandering Group"
 author = "Metric Geometry and Gerrymandering Group"
 
+
+def get_version():
+    return subprocess.check_output(['git', 'describe', '--tags']).strip().decode('utf-8')
+
 # The short X.Y version
-version = ""
+version = get_version()
 # The full version, including alpha/beta/rc tags
-release = ""
+release = version
 
 # -- General configuration ---------------------------------------------------
 
