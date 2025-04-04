@@ -12,3 +12,5 @@ extra_data/
 docs/_build
 .dev
 vote2
+dev_files
+.envrc
